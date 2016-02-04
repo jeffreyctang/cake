@@ -1,0 +1,14 @@
+default:
+    count: 1
+    instance_type: t2.micro
+    security_groups:
+        - sg-8943f7ed
+    services:
+        - httpd
+    post_provision_instance_root_script: deployment/scripts/post_install_root.sh
+    elb_id: jeff-cake-test
+
+integration:
+    count: 4
+
+production:
