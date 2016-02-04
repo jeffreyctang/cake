@@ -6,7 +6,7 @@ default:
     services:
         - httpd
     post_provision_instance_root_script: deployment/scripts/post_install_root.sh
-    pager_duty_url: ""
+    pager_duty_url: http://notarealurl.com
     elb_id: jeff-cake-test
 
 integration:
